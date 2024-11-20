@@ -34,7 +34,7 @@ class Encoder(nn.Module):
         x, (_, _) = self.rnn1(x)
         # print(f'ENCODER output rnn1 dim: {x.shape}')
         x, (hidden_n, _) = self.rnn2(x)
-        # print(f'ENCODER output rnn2 dim: {x.shape}')
+        # print(f'manENCODER output rnn2 dim: {x.shape}')
         # print(f'ENCODER hidden_n rnn2 dim: {hidden_n.shape}')
         # print(f'ENCODER hidden_n wants to be reshaped to : {(batch_size, self.embedding_dim)}')
         return hidden_n.reshape((batch_size, self.embedding_dim))

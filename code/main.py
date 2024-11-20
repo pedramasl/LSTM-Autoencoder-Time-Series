@@ -125,3 +125,4 @@ if __name__ == '__main__':
         print(f'Epoch {epoch}: train loss {train_loss} {" "*6} val loss {val_loss} {" "*6} test loss {test_loss} {" "*6} anomaly loss {anomaly_loss}')
 
     model.load_state_dict(best_model_wts)
+    
